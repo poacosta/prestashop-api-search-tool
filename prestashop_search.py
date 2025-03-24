@@ -8,7 +8,6 @@ and exports results to a CSV with detailed information about matches.
 Authentication is handled using Basic Auth with the provided username.
 """
 
-import requests
 import csv
 import logging
 import time
@@ -18,6 +17,8 @@ from datetime import datetime
 from pathlib import Path
 from typing import Dict, List, Optional, Tuple, Union
 from urllib.parse import quote
+
+import requests
 
 try:
     from requests.adapters import HTTPAdapter
